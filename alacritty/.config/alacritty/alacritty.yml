@@ -899,7 +899,8 @@ key_bindings:
   #highlight_damage: false
 
 import:
+   - ~/.config/alacritty/omni.yaml
 #   - ~/.config/alacritty/alacritty-theme-yaml/themes/ayu_dark.yaml
 #   - ~/.config/alacritty/alacritty-theme-yaml/themes/falcon.yaml
-   - ~/.config/alacritty/alacritty-theme-yaml/themes/omni.yaml
+#   - ~/.config/alacritty/alacritty-theme-yaml/themes/omni.yaml
 #   - ~/.config/alacritty/alacritty-theme-yaml/themes/tomorrow_night_bright.yaml
