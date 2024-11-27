@@ -1,0 +1,53 @@
+[general]
+framerate = 60
+autosens = 1
+sensitivity = 100
+bars = 0
+bar_width = 0
+bar_spacing = 1
+lower_cutoff_freq = 20
+higher_cutoff_freq = 20000
+[input]
+; sample_rate = 44100
+; sample_bits = 16
+; channels = 2
+; autoconnect = 2
+[output]
+; method = noncurses
+; orientation = bottom
+channels = mono
+mono_option = average
+reverse = 0
+; raw_target = /dev/stdout
+; data_format = binary
+; bit_format = 16bit
+; ascii_max_range = 1000
+; bar_delimiter = 59
+; frame_delimiter = 10
+; sdl_width = 1000
+; sdl_height = 500
+; sdl_x = -1
+; sdl_y= -1
+; sdl_full_screen = 0
+; xaxis = none
+show_idle_bar_heads = 1
+waveform = 0
+[color]
+; background = default
+; foreground = default
+gradient = 1
+gradient_count = 6
+gradient_color_1 = '#b20cff'
+gradient_color_2 = '#008ff2'
+gradient_color_3 = '#0af300'
+gradient_color_4 = '#fbff02'
+gradient_color_5 = '#ff9804'
+gradient_color_6 = '#d00000'
+[smoothing]
+monstercat = 1
+waves = 1
+noise_reduction = 77
+[eq]
+1 = 1 # bass
+2 = 1 # midtone
+3 = 1 # treble
