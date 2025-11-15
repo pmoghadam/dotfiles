@@ -12,10 +12,10 @@ iw dev wlp5s0 scan | grep SSID
 ```
 # /etc/network/interfaces
 
-auto wlps0
-iface wlps0 inet dhcp
-    wpa-ssid "mySSID"
-    wpa-psk "myPASSWORD"
+auto wlp5s0
+iface wlp5s0 inet dhcp
+    wpa-ssid "SSID"
+    wpa-psk "PASSWORD"
 
 ```
 
