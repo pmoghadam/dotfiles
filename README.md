@@ -76,11 +76,6 @@ apt-get -y install          \
     xfsprogs                \
     autoconf                \
     libtool                 \
-    openipmi                \
-    ipmitool                \
-    freeipmi-tools          \
-    freeipmi-bmc-watchdog   \
-    freeipmi-ipmidetect     \
     zip                     \
     unzip                   \
     iptables-persistent     \
