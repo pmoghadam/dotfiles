@@ -5,7 +5,7 @@ Debian 13
 ```
 ip link show
 ip link set up dev wlp5s0
-iw dev wlp5s0 | grep SSID
+iw dev wlp5s0 scan | grep SSID
 
 ```
 
