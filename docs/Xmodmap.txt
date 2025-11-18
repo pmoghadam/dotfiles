@@ -1,0 +1,4 @@
+# Change CapsLock to left arrow"
+# exec --no-startup-id xmodmap ~/.Xmodmap
+clear lock
+keycode 66 = Left NoSymbol Left
