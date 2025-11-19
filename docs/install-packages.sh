@@ -73,5 +73,8 @@ apt-get -y install          \
     tmux                    \
     x11-xserver-utils       \
     x11-xkb-utils           \
+    xwininfo                \
+    x11-utils               \
+    dbus-x11                \
     firefox-esr
 
