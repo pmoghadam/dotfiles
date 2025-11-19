@@ -1,6 +1,5 @@
 # dotFiles
-i3wm and friends
-Debian 13
+i3wm  on Debian 13
 
 ```
 ip link show
