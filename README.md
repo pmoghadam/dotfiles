@@ -1,4 +1,4 @@
-# dotConfig
+# dotFiles
 i3wm and friends
 Debian 13
 
