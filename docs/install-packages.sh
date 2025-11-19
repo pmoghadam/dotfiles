@@ -77,3 +77,9 @@ apt-get -y install          \
     dbus-x11                \
     firefox-esr
 
+apt-get -y install          \
+    fonts-terminus          \
+    fonts-terminus-otb      \
+    xfonts-terminus         \
+    xfonts-terminus-dos     \
+    xfonts-terminus-oblique
