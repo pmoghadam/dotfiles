@@ -36,3 +36,11 @@ chmod +x install-packages.sh
 su -c ./install-packages.sh
 reboot
 ```
+
+```
+su -c "bash -c 'echo $USER ALL=\(ALL:ALL\) NOPASSWD:ALL > /etc/sudoers.d/$USER'"
+```
+
+```
+cp tmux/tmux.conf ~/.tmux.conf
+```
