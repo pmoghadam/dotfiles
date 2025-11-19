@@ -1,7 +1,10 @@
 ```
+git clone 'http://github.com/pmoghadam/dotfiles'
+cd dotfiles/
 mkdir ~/.config/
 cp -rv alacritty rofi i3 ~/.config/
+cd docs
 chmod +x install-packages.sh
-./install-packages.sh
+su -c ./install-packages.sh
 reboot
 ```
