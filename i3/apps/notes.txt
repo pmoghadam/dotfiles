@@ -3,10 +3,6 @@ assign [class="Firefox"] $ws2
 assign [class="Code"] $ws3
 assign [class="Alacritty"] $ws1
 
-for_window [class="Thunderbird"] move container to workspace $ws0
-for_window [class="thunderbird"] move container to workspace $ws0
-for_window [title="alacritty-startup"] move container to workspace $ws0
-
 exec_always --no-startup-id $HOME/.config/i3/monitoring.sh
 
 exec_always --no-startup-id i3-msg 'workspace $ws0; layout tabbed'
