@@ -75,6 +75,7 @@ apt-get -y install          \
     x11-xkb-utils           \
     x11-utils               \
     dbus-x11                \
+    mate-calc               \
     firefox-esr
 
 apt-get -y install          \
