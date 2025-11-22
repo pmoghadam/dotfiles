@@ -4,3 +4,4 @@ include ~/.config/i3/keys/*.conf
 include ~/.config/i3/apps/*.conf
 include ~/.config/i3/bar/*.conf
 include ~/.config/i3/startup/*.conf
+include ~/.config/i3/wallpaper/*.conf
