@@ -1,8 +1,9 @@
 set $mod Mod4
 include ~/.config/i3/config.d/general/*.conf
 include ~/.config/i3/keys/*.conf
-include ~/.config/i3/apps/*.conf
 include ~/.config/i3/bar/*.conf
 include ~/.config/i3/startup/*.conf
-include ~/.config/i3/wallpaper/*.conf
-include ~/.config/i3/screenshot/*.conf
+include ~/.config/i3/config.d/wallpaper/*.conf
+include ~/.config/i3/config.d/screenshot/*.conf
+include ~/.config/i3/apps/*.conf
+include ~/.config/i3/config.d/monitoring/*.conf
