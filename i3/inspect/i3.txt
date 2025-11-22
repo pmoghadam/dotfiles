@@ -1,0 +1,85 @@
+
+apt install i3 i3-wm i3lock i3status
+
+https://asoftclick.com/best-window-manager-linux/
+
+https://i3wm.org/docs/userguide.html
+https://wiki.archlinux.org/title/I3
+https://thevaluable.dev/i3-config-mouseless/
+https://i3wm.org/docs/layout-saving.html
+https://github.com/tonyho/i3wm-conky-config
+https://i3wm.org/docs/user-contributed/conky-i3bar.html
+https://faq.i3wm.org/question/2809/focus-between-and-inside-containers/index.html
+
+https://faq.i3wm.org/question/4938/bash-script-to-start-several-terminalssh-windows-with-specific-layout.1.html
+
+disable resize
+bindsym --border button3 nop
+bindsym --whole-window $mod+button3 nop
+
+
+
+cat /var/lib/AccountsService/users/sysadmin
+[User]
+Language=
+XSession=i3
+SystemAccount=false
+
+/etc/gdm3/daemon.conf
+  AutomaticLoginEnable = true
+  AutomaticLogin = sysadmin
+
+
+https://i3wm.org/
+https://i3wm.org/docs/userguide.html
+~ /.i3/config or ~ /.config/i3/config 
+$Mod + d
+bindsym $Mod+<key> <command> <arguments>
+bindsym $Mod+i exec firefox www.debian.org
+i3 restart
+
+/etc/i3/config.
+
+$mod+Enter Editor
+
+$mod+j left
+$mod+k down
+$mod+l up
+$mod+; right
+
+
+To split a window vertically, press $mod+v 
+To split it horizontally, press $mod+h.
+
+container layout 
+splith/splitv $mod+e
+stacking  $mod+s
+tabbed $mod+w
+fullscreen $mod+f
+$mod+d  dmenu
+mod+Shift+q kill window
+
+workspaces
+To switch to another workspace, press $mod+num where num 
+To move a window to another workspace, simply press $mod+Shift+num where num is
+
+
+$mod+Shift+r restart i3
+$mod+Shift+e exit i3
+
+$mod+Shift+Space floating mode
+
+$mod+a focus parent
+$mod+shift+j
+
+
+apt install  fonts-terminus  fonts-terminus-otb  xfonts-terminus  xfonts-terminus-dos  xfonts-terminus-oblique
+
+http://xosview.sourceforge.net/gallery.html
+https://gist.github.com/dianjuar/ee774561a8bc02b077989bc17424a19f
+http://vimperator.org/
+??? https://docs.flatpak.org/en/latest/getting-started.html
+https://gajim.org/
+
+
+apcupsd audacious moc mpd xmms2
