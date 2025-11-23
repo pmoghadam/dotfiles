@@ -1,0 +1,25 @@
+set background=dark
+syntax on
+set mouse=r
+set filetype=on
+let mapleader=','
+
+augroup FileTypeSpecificAutocommands
+	autocmd FileType yaml setlocal et ts=2 ai sw=2 nu sts=0
+	autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab autoindent
+	autocmd FileType php setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab autoindent
+	autocmd FileType c call Set_C_Options()
+	autocmd BufWritePre *.c %s/\s\+$//e
+augroup END
+
+function Set_C_Options()
+	setlocal tabstop=4
+	setlocal softtabstop=4
+	setlocal shiftwidth=4
+	setlocal expandtab
+	setlocal cindent
+	setlocal termguicolors
+	setlocal number
+	nnoremap <Leader>cc :set colorcolumn=80<cr>
+	nnoremap <Leader>ncc :set colorcolumn-=80<cr>
+endfunction

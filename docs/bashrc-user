@@ -1,0 +1,27 @@
+
+# Aliases
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Proxy
+#export http_proxy="http://172.18.180.41:3128"
+#export https_proxy="http://172.18.180.41:3128"
+#export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,localshatel.ir
+
+# Prompt
+COLOR_RESET='\[\e[0m\]'
+COLOR_BOLD_RED='\[\e[1;31m\]'
+COLOR_BOLD_GREEN='\[\e[1;32m\]'
+COLOR_BOLD_YELLOW='\[\e[1;33m\]'
+COLOR_BOLD_BLUE='\[\e[1;34m\]'
+COLOR_BOLD_PURPLE='\[\e[1;35m\]'
+COLOR_BOLD_CYAN='\[\e[1;36m\]'
+PRMT_TIME_DATE="${COLOR_BOLD_GREEN}\D{%H:%M:%S %F %a %b}${COLOR_RESET}"
+PRMT_USER="${COLOR_BOLD_GREEN}\u"
+PRMT_AT="${COLOR_BOLD_YELLOW}@"
+PRMT_HOST="${COLOR_BOLD_CYAN}\H:"
+PRMT_DIR="${COLOR_BOLD_YELLOW}\w${COLOR_RESET}"
+PRMT_PRIVILEGE="${COLOR_BOLD_PURPLE}\\$ ${COLOR_RESET}"
+PS1="\n\[\e[0m\][ $PRMT_TIME_DATE ]\n[ ${PRMT_USER}${PRMT_AT}${PRMT_HOST}${PRMT_DIR} ]\n$PRMT_PRIVILEGE"
+
