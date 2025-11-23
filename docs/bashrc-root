@@ -12,8 +12,8 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 # Proxy
-#export http_proxy="http://172.18.180.41:3128"
-#export https_proxy="http://172.18.180.41:3128"
+#export http_proxy="http://192.168.1.1:3128"
+#export https_proxy="http://192.168.1.1:3128"
 #export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,example.com
 
 # Prompt
