@@ -34,6 +34,7 @@ cp -rv alacritty rofi i3 ~/.config/
 cd scripts
 chmod +x install-packages.sh
 su -c ./install-packages.sh
+xdg-user-dirs-update
 reboot
 ```
 
