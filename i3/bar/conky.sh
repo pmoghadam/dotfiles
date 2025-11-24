@@ -1,5 +1,4 @@
 #!/bin/sh
-# ~/.config/i3/i3bar-conky.sh
 
 # Send the header so that i3bar knows we want to use JSON:
 echo '{"version":1}'
@@ -11,4 +10,4 @@ echo '['
 echo '[],'
 
 # Now send blocks with information forever:
-exec conky -c $HOME/.config/i3/bar/i3bar-conky.rc
+exec conky -c $HOME/.config/i3/bar/conky.rc
