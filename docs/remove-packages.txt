@@ -1,0 +1,3 @@
+apt purge ibus
+apt purge network-manager-gnome
+apt autoremove --purge
