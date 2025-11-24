@@ -4,5 +4,5 @@
 XKBMODEL="pc105"
 XKBLAYOUT="us,ir"
 XKBVARIANT=""
-XKBOPTIONS="grp:switch,grp:shifts_toggle,grp_led:scroll"
+XKBOPTIONS="grp:switch,grp:shifts_toggle,grp_led:scroll,caps:left_arrow"
 BACKSPACE="guess"
