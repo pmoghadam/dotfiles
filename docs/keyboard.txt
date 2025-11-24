@@ -1,0 +1,8 @@
+# /etc/default/keyboard
+# KEYBOARD CONFIGURATION FILE
+# Consult the keyboard(5) manual page.
+XKBMODEL="pc105"
+XKBLAYOUT="us,ir"
+XKBVARIANT=""
+XKBOPTIONS="grp:switch,grp:shifts_toggle,grp_led:scroll"
+BACKSPACE="guess"
