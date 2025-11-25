@@ -9,6 +9,13 @@ alias mv='mv -i'
 #export https_proxy="http://192.168.1.1:3128"
 #export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,example.com
 
+# Fun
+#! [[ "$TERM" =~ ^screen\. ]] && neofetch --color_blocks off | lolcat
+#fortune  | boxes -d ian_jones | lolcat
+#fortune  | toilet -w 95 -f future --filter metal
+#fortune  | boxes | lolcat
+#fortune  | boxes -d c-cmt2 | lolcat
+
 # Prompt
 COLOR_RESET='\[\e[0m\]'
 COLOR_BOLD_RED='\[\e[1;31m\]'
@@ -22,6 +29,6 @@ PRMT_USER="${COLOR_BOLD_GREEN}\u"
 PRMT_AT="${COLOR_BOLD_YELLOW}@"
 PRMT_HOST="${COLOR_BOLD_CYAN}\H:"
 PRMT_DIR="${COLOR_BOLD_YELLOW}\w${COLOR_RESET}"
-PRMT_PRIVILEGE="${COLOR_BOLD_PURPLE}\\$ ${COLOR_RESET}"
+PRMT_PRIVILEGE="${COLOR_BOLD_CYAN}\\$ ${COLOR_RESET}"
 PS1="\n\[\e[0m\][ $PRMT_TIME_DATE ]\n[ ${PRMT_USER}${PRMT_AT}${PRMT_HOST}${PRMT_DIR} ]\n$PRMT_PRIVILEGE"
 
