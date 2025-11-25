@@ -1,22 +1,29 @@
 #!/bin/bash
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
- 
+
 [ "$#" != "1" ] && exit
 DST=$1
- 
+
 RED='\E[1;31m'; GRN='\E[1;32m'; YEL='\E[1;33m'; BLU='\E[1;34m';
 MAG='\E[1;35m'; CYN='\E[1;36m'; WHI='\E[1;37m'; DRED='\E[0;31m';
 DGRN='\E[0;32m'; DYEL='\E[0;33m'; DBLU='\E[0;34m'; DMAG='\E[0;35m';
 DCYN='\E[0;36m'; DWHI='\E[0;37m'; RES='\E[0m'
- 
+
+COUNT=0
 while :; do
-      echo -e "\nPinging $DST: "
+	echo -e "\n$(date +%F-%T) -- Pinging $DST: "
 	for i in {1..100}; do
-		LOSS=$(sudo ping -c 10 -f $DST | grep '% packet loss' | sed -e 's,%.*,,' -e 's,.* ,,')
-		if [ "$LOSS" == "0" ]; then
+		LOSS=$(sudo ping -c 10 -W 3 -f $DST | grep '% packet loss' | sed -e 's,%.*,,' -e 's,.* ,,')
+		if [ "$LOSS" == "0" ] || [ "$LOSS" == "10" ]; then
 			echo -en "${GRN}!${RES}"
+			COUNT=0
 		else
 		        echo -en "${DRED} $LOSS ${RES}"
+			(( COUNT++ ))
+		fi
+		if [ "$COUNT" -gt "3" ]; then
+			echo "$(date +%F-%T) -- Definitely down: $COUNT"
+			mplayer alert.wav &> /dev/null
 		fi
 	done
 	sleep 1
