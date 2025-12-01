@@ -67,6 +67,8 @@ apt-get -y install          \
     feh                     \
     pasystray               \
     pulseaudio              \
+    pavucontrol             \
+    mplayer                 \
     scrot                   \
     avahi-daemon            \
     avahi-utils             \
@@ -84,3 +86,4 @@ apt-get -y install          \
     xfonts-terminus         \
     xfonts-terminus-dos     \
     xfonts-terminus-oblique
+
